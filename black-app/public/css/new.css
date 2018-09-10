@@ -1,0 +1,141 @@
+.Container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+}
+
+
+.Container h1 {
+    color:#80a3db;
+    font-size: 3em;
+    flex-wrap: nowrap;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+h1.end {
+    position: relative;
+  color: #80a3db;
+  opacity: 0;
+  transition: 0.8s ease-in-out;
+}
+
+.New-Budget-Form {
+    background: #fff;
+    position: relative;
+    width: 600px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.1),
+    0 6px 10px 5px rgba(0, 0, 0, 0.1), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s ease-in-out;
+}
+
+.New-Budget-Form.Close {
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: 0.8s ease-in-out;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0);
+}
+
+#nextBtn {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    font-size: 40px;
+    color: #80a3db;
+    float: right;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#nextBtn:hover {
+    color: #efefef;
+}
+
+#prevBtn {
+    position: absolute;
+    font-size: 18px;
+    left: 30px;
+    top: 12px;
+    z-index: 2;
+    color: #efefef;
+    float: right;
+    cursor: pointer;
+}
+
+#prevBtn:hover {
+    color: #f2f2f2;
+}
+
+.Input-Group {
+    position: relative;
+    padding: 30px 20px 20px 20px;
+    margin: 10px 60px 10px 10px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+.Input-Group input {
+    position: relative;
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+#inputLabel {
+    position: absolute;
+    pointer-events: none;
+    top: 32px;
+    left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+}
+
+input:valid + #inputLabel {
+    top: 6px;
+    left: 42px;
+    margin-left: 0 !important;
+    font-size: 11px;
+    font-weight: normal;
+    color: #f2f2f2;
+}
+
+#inputProgress {
+    border-bottom: 3px solid #80a3db;
+    /* width: 0; */
+    transition: width 0.6s ease-in-out;
+}
+
+#progressBar {
+    position: absolute;
+    background: #efefef;
+    width: 0;
+    height: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+.Close #nextBtn, .Close #prevBtn {
+    color: #fff;
+}
+
+.Error #inputProgress {
+    border-color: #ff2d26;
+}
+
+.Error #nextBtn {
+    border-color: #ff2d26;
+}
+
+@media(max-width: 600px){
+    .New-Budget-Form {
+        width: 80%;
+    }
+}

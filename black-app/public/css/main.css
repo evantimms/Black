@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+}
+
+.Navbar {
+    background-color: #80a3db;
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+}
+
+.Navbar a {
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding-left: 5px;
+    padding-right: 5px; 
+    text-decoration: none;
+    color: #fff;
+}
+
+.Navbar-Items {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.Navbar-Brand {
+    color: #fff;
+    font-weight: 600;
+    align-self: flex-start;
+}
+
+.Navbar-Brand h3 {
+    font-size: 2rem;
+}
+
+.Navbar-Toggle {
+    transform: scale(1.5);
+    margin-top: 8px;
+    color: #fff;
+    display: none;
+}
+
+.Navbar-Add {
+    color: #fff;
+    align-self: flex-start;
+    margin-left: 25px;
+    margin-top: 10px;
+    transform: scale(1.5);
+    cursor: pointer;
+} 
+
+@media only screen and (max-width: 500px){
+    .Navbar {
+        padding: 10px;
+    }
+    .Navbar-Items, .Navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Navbar-Items{
+        display: none;
+        margin-left: 0;
+    }
+    .Navbar-Toggle {
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .Navbar-ToggleShow {
+        display: flex;
+    }
+    .Navbar-Add {
+        align-self: center;
+        position: absolute;
+        margin-right: auto;
+        margin-left: 5px; 
+    }
+    .Navbar-Brand {
+        font-size: 1.5rem;
+    }
+}
+
+/* TODO: Finish Popup Styling */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+.Purchase-Popup {
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+    height: 50px;
+    background-color: #555;
+    position: absolute;  
+    z-index: 1;
+}
+
+.Purchase-Form {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.Purchase-Popup.Show {
+    visibility: visible;
+}
+
+
+
+.Purchase-Form input {
+    outline: none;
+    margin: 5px 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size:20px;
+    color: #fff; 
+    background-color: #555;
+    border: none;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+
+.Purchase-Form input::placeholder {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.Purchase-Form input#submit {
+    border: 1px solid white;
+    padding: 5px 5px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.Main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    background-color: #fff;
+}
+
+.Pie-Chart {
+    align-self: center;
+    height: 40vh;
+    width: 100%;
+}
+
+.Line-Chart {
+    align-self: center;
+    height: 20vh;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.Main-Display {
+    text-align: center;
+    height: 100%;
+}
+
+
+.Date-Day {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.Date-Number, .Date-Month, .Date-Year {
+    font-size: small;    
+}
+
+.Main-Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Main-Header span#username {
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10vw; 
+}
+
+.Main-History {
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+/* Budget Details */
+#budget-details {
+    /* margin: auto; */
+    position: relative;
+    top: 30px;
+    padding: 10px 10px;
+    background-color: #555;
+    border: 2px solid black;
+    border-radius: 5%;
+    outline: none;
+    color: white;
+    text-decoration: none;
+}

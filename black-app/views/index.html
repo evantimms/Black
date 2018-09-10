@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Black</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/external/canvasjs.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="Navbar">
+            <div class="Navbar-Link Navbar-Brand">
+                <h3> Black</h3> 
+            </div>
+            <div id="addBtn" class="Navbar-Link Navbar-Add">
+                <i class="fas fa-plus"></i>
+            </div>
+            <div class="Navbar-Link Navbar-Toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="Navbar-Items">
+                <div class="Navbar-Link">
+                    <a href="/logout">Sign Out</a>
+                </div>
+                <div class="Navbar-Link">
+                    <a id="new-budget" href="">New Budget</a>
+                </div>
+                <div class="Navbar-Link">
+                    <a id="edit-budget" href="/">Edit A Budget</a>
+                </div>
+                <div class="Navbar-Link">
+                    <a href="/">Black+</a>
+                </div> 
+            </nav>
+        </div>
+
+        <!-- new purchase popup -->
+        <div class="Purchase-Popup">
+            <form action="" class="Purchase-Form">
+                <input type="text" id="des" placeholder="What did you buy...?">
+                <input type="number" id="amount" placeholder="$?">
+                <input type="submit" id="submit">
+            </form>
+        </div>
+    </header>
+
+    <main class="Main">
+        
+        <div class="Main-Header">
+            <div class="Date">
+                <p class="Date Date-Display">
+                    <span class="Date-Day"></span>
+                    <span class="Date-Month"></span>
+                    <span class="Date-Number"></span>
+                    <span class="Date-Year"></span>
+                </p>
+            </div>
+
+            <div class="Name">
+                <p>Welcome <span id="username"></span></p>
+            </div>
+        </div>
+
+
+        <div class="Main-Pie">
+            <div id="pieChartContainer" class="Pie-Chart">
+            </div>
+        </div>
+
+        <div class="Main-Display">
+            <h2 class="Remaining-Display">You Have <span id="Remaining"></span> Left To Spend</h2>
+            <p class="Reset-Display">Your Budget Will Reset On: <span id="Reset"></span></p>
+            <a id="budget-details" href="">Details</a>
+        </div>
+
+        <div class="Main-History">
+            <div id="historyChartContainer" class="Line-Chart">
+            </div>
+        </div>
+        
+
+
+    </main>
+    <script src="/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "Black",
+  "version": "0.3.2",
+  "description": "Chrome Extension to Track and Budget Online Shopping",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/EvanTimms/Black.git"
+  },
+  "author": "Evan Timms",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EvanTimms/Black/issues"
+  },
+  "homepage": "https://github.com/EvanTimms/Black#readme"
+}

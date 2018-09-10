@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Black</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/budget.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <header>
+        <div class="Navbar">
+            <div class="Navbar-Link Navbar-Brand">
+                Black
+            </div>
+            <div class="Navbar-Link Navbar-Toggle">
+                <i class="fas fa-bars fa-2x"></i>
+            </div>
+            <nav class="Navbar-Items">
+                <div class="Navbar-Link">
+                    <a href="/">Sign Out</a>
+                </div>
+                <div class="Navbar-Link">
+                    <a href="">New Budget</a>
+                </div>
+                <div class="Navbar-Link">
+                    <a href="">Edit A Budget</a>
+                </div>
+                <div class="Navbar-Link">
+                    <a href="">Black+</a>
+                </div> 
+            </nav>
+        </div>
+    </header>
+    <section id="budget">
+        <div class="budget-header">
+            <h2 class="budget-name">Budget Details</h2>
+            <p class="remaining-display">You Have <span id="remaining"></span> left to spent this cycle</p>
+            <p class="reset-display">Your budget will reset on: <span id="reset"></span></p>
+        </div>
+        <div class="budget-stats">
+            <div class="graphics">
+                <div class="graphics-pi">
+                   <div id="pieChartContainer"></div> 
+                </div>
+                <div class="graphics-history">
+                    <div id="historyChartContainer"></div>
+                </div>
+            </div>
+            <div class="arrow-container">
+                <i class="fas fa-arrow-left fa-3x"></i>
+                <i class="fas fa-arrow-right fa-3x"></i>
+            </div>
+
+            <div class="details">
+                <div class="purchase-history"></div>
+                <div class="information-display">
+                    <div class="cycle-stats">
+                        <div class="cycle-spendage"></div>
+                    </div>
+                    <a id="edit-link" href="edit" >Edit Budget</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/js/budget.js"></script>
+</body>
+</html>

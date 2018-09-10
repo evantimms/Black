@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Black</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/new.css">
+    <script src="/js/external/canvasjs.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="Navbar">
+            <div class="Navbar-Link Navbar-Brand">
+                Black
+            </div>
+            <div class="Navbar-Link Navbar-Toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="Navbar-Items">
+                <div class="Navbar-Link">
+                    <a href="/">Sign Out</a>
+                </div>
+                <div class="Navbar-Link">
+                    <a href="/new">New Budget</a>
+                </div>
+                <div class="Navbar-Link">
+                    <a href="/">Edit A Budget</a>
+                </div>
+                <div class="Navbar-Link">
+                    <a href="/">Black Premium</a>
+                </div> 
+            </nav>
+        </div>
+    </header>
+
+    <main class="Main">
+
+        <div class="Container">
+            <h1>Create A New Budget</h1>
+            <form id="new" action="/user/" method="POST">
+                <input type="text" id="amount" name="amount" required="required">
+                <label for="amount">How Much Do You Want to Spend</label>
+                <p></p>
+                <br>
+                <div>
+                    <p>When Do You Want This Budget To reset</p>
+                    <input type="radio" value="yearly" id="yearly" name="reset_type">
+                    <label for="yearly">Yearly</label>
+                    <input type="radio" value="monthly" id="monthly" name="reset_type">
+                    <label for="monthly">Monthly</label>
+                    <input type="radio" value="bi-weekly" id="bi-weekly" name="reset_type">
+                    <label for="bi-weekly">Bi-Weekly</label>
+                    <input type="radio" value="weekly" id="weekly" name="reset_type">
+                    <label for="weekly">Weekly</label>
+                    <br>
+                    <input type="submit">
+                </div>
+            </form>
+
+            <!-- <div class="New-Budget-Form">
+                <i id="prevBtn" class="fa fa-arrow-left"></i>
+                <i id="nextBtn" class="fa fa-arrow-right"></i>
+                <div class="Input-Group">
+                    <input type="text" id="inputField">
+                    <label for="" id="inputLabel">Input Here</label>
+                    <div id="inputProgress"></div> 
+                </div>
+                <div id="progressBar"></div>
+            </div> -->
+        </div>
+    </main>
+    <script src="/js/new.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+.Login {
+    padding-top: 20vh;
+    padding-bottom: 20vh;  
+}
+
+.Login-Form {
+    padding: 0 20vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.Login-Form input {
+    padding: 10px 0;
+    margin-bottom: 15px; 
+}
+
+.Login-Form button {
+    padding: 10px;
+    margin: 0 15vw;  
+}
+
+.Login h3 {
+    text-align: center;
+    font-size: 3rem;
+}

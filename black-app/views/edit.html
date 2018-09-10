@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Black</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+<body>
+    <header>
+        <div class="Navbar">
+            <div class="Navbar-Link Navbar-Brand">
+                Black
+            </div>
+            <div class="Navbar-Link Navbar-Toggle">
+                <i class="fas fa-bars fa-2x"></i>
+            </div>
+            <nav class="Navbar-Items">
+                <div class="Navbar-Link">
+                    <a href="/">Sign Out</a>
+                </div>
+                <div class="Navbar-Link">
+                    <a href="">New Budget</a>
+                </div>
+                <div class="Navbar-Link">
+                    <a href="">Edit A Budget</a>
+                </div>
+                <div class="Navbar-Link">
+                    <a href="">Black Premium</a>
+                </div> 
+            </nav>
+        </div>
+    </header>
+
+    <section id="edit">
+        <div class="name-display">
+            <h2>Edit <span class="budget-name">"Budget"</span></h2>
+        </div>
+        <form class="setting-form">
+            <div class="settings-container">
+                <div class="setting">Cycle Amount</div>
+                <input id="amount" type="number" name="cycle_amount" class="setting-input">
+            </div>
+            <div class="settings-container">
+                <div class="setting">Reset Date</div>
+                <input id="reset" type="date" name="reset_date" class="setting-input">
+            </div>
+            <div class="settings-container">
+                <div class="setting">Reset Interval</div>
+                <input type="radio" name="reset_interval" value="weekly" class="setting-input">Weekly
+                <input type="radio" name="reset_interval" value="bi-weekly" class="setting-input">Bi-Weekly
+                <input type="radio" name="reset_interval" value="monthly" class="setting-input">Monthly
+                <input type="radio" name="reset_interval" value="yearly" class="setting-input">Yearly
+            </div>
+            <button id="submit" >Save Changes<button/>
+        </form>
+
+    </section>
+    <script src="/js/edit.js"></script>
+</body>
+</html>
