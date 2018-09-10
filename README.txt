@@ -1,45 +1,21 @@
-BUGS:
+# Black
+
+## A Project By Evan
 
 
-TODO TODAY ():
-Backend =>
-1. Complete all route boilerplate - DONE
-2. Build boilerplate views for login/logout-DONE
-2. register new user route-DONE
-3. Log in route-DONE
-4. log out functionality-DONE 
-5. write check log in middleware and add to routes-DONE
-6. build settings/edit/budget pages-DONE
-7. create budget route-DONE
-8. show route-DONE
-9. edit route-DONE
-10. update route-DONE
-11. delete route
-12. settings update route 
-13. fix links
-14. comment so you dont get utterly confused
-15. Budget Links
-16. Black+ Page
-17. Edit Budget Page
-18. Budget Refresh
+I used to be awful with money. After years of trying every trick in the book to save more and spend less, I eventually 
+started to learn that the key to saving money was consistency. Consistently monitoring how much you are spending and taking
+care to budget and track purchases made managing your expenses and saving far easier. The problem for me however, is that 
+most software out there for person budgeting was way to dang complicated. I found it was difficult to use, and oftentimes 
+was slow and outdated.
 
-Frontend =>
-1.Design new color scheme-DONE SORTA
-2.Logo
-3.Update Landing Page
-4.Frontend for show/edit/new route
-5.Navbar
-6.Integrate Color scheme
-7.Dashboard CSS
-8.Animations
-9.General CSS- Graphs etc
+Black is personal expense tracking - made simple, easy to use and accessible. The software is built neaty into a web app that
+can be accessed via the website, or by downloading the extension on the chrome store. Black monitores your purchases and keeps
+a simple easy to read budget that you customize to suit your needs. It makes online shopping a breeze, at checkout you can simply
+add the purchase to Black and it will update your budget, and warn you when that extra pair of shoes might be a little more than
+you can afford.
 
+So keep it simple, and stay in the black.
 
-
-NEW COLOR SCHEME:
-
-Background: #1e1e1e
-Title: #3a3a3a
-Buttons: #666666
-Highlights: #f2f2f2
-Links/Special: #c11f1f
+*For the geeks out there: Black is built in Express 4.16 and features full integration with MongoDB, authentication with
+PassportJS and real time data tracking and display with CanvasJS (Later to be upgraded to D3.js).*
