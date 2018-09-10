@@ -1,5 +1,12 @@
 # Black
 
+<img src="Black_Logo.png" alt="Logo Image" style="
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%
+" />
+
 ## A Project By Evan
 
 
